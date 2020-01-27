@@ -12,7 +12,7 @@ while True:
         inp = int(inp)
         lst.append(inp)
     except:
-        print('Please Enter a valid number you enterded {}'.format(inp))
+        print('Please Enter a valid number you enterded \'{}\''.format(inp))
 
 arr = np.array(lst)
 
