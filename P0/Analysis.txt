@@ -1,0 +1,25 @@
+## Task0
+This takes runs in O(1), due to the fact that _access_ on a Python list has O(1), and there are
+two lines executing accesses to lists
+
+## Task1
+This takes runs in O(n), due to the fact that we access sequentially both files for two of their
+columns, resulting in `2*O(n)*O(1) -> O(n)`
+
+## Task2
+This takes runs in O(n^2), due to the fact that we find many operations that there are two nested for loops.
+and each statement in for loop runs exactly n times resulting in 2 * O(n) * O(n) -> O(n^2)
+
+## Task3
+This takes runs in O(n log n), due to the fact that we find list sorting operations, which have
+a time complexity of O(n log n). In the code we find many operations that are O(1) as
+the different elements are modified. Additionally there are several full scans thorough the lists,
+which have O(n) time complexity. Though they all add up to some value of `x * O(n) + `O(n log n)`,
+we end up simplifying them into `O(n log n)`.
+
+## Task4
+This takes runs in O(n log n), due to the fact that we find list sorting operations, which have
+a time complexity of O(n log n). In the code we find many operations that are O(1) as
+the different elements are modified. Additionally there are several _full scans thorough the lists,
+which have O(n) time complexity. Though they all add up to some value of `x * O(n) + `O(n log n)`,
+we end up simplifying them into `O(n log n)`.
